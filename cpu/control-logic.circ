@@ -17,6 +17,7 @@
       <a name="radix" val="16"/>
     </tool>
     <tool name="Tunnel">
+      <a name="facing" val="south"/>
       <a name="width" val="2"/>
     </tool>
     <tool name="Pull Resistor">
@@ -107,10 +108,6 @@
       <circ-port dir="out" pin="810,210" x="670" y="230"/>
       <circ-port dir="out" pin="880,210" x="720" y="230"/>
     </appear>
-    <comp lib="0" loc="(1010,240)" name="Constant"/>
-    <comp lib="0" loc="(1010,260)" name="Clock">
-      <a name="facing" val="north"/>
-    </comp>
     <comp lib="0" loc="(1110,740)" name="Constant">
       <a name="value" val="0x0"/>
     </comp>
@@ -435,10 +432,6 @@
     <comp lib="3" loc="(480,1640)" name="Comparator">
       <a name="mode" val="unsigned"/>
       <a name="width" val="10"/>
-    </comp>
-    <comp lib="4" loc="(1010,190)" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="width" val="7"/>
     </comp>
     <comp lib="4" loc="(380,440)" name="ROM">
       <a name="addrWidth" val="6"/>
