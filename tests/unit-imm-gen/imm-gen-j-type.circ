@@ -169,7 +169,7 @@
     <comp lib="4" loc="(610,350)" name="ROM">
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 8 3
-4 4 4
+5 5 5
 </a>
       <a name="dataWidth" val="3"/>
     </comp>
