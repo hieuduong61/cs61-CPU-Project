@@ -3,6 +3,20 @@ andi t0 ra 23
 xori ra t0 1
 srli ra ra 1
 srai ra t0 3
-
-addi t2 x0 1
-sll s0 ra t2
+srai ra ra 1
+slti ra ra 1
+addi t1 x0 2
+add ra t1 ra
+sub ra ra t1
+and t2 ra t0
+or ra t2 t0
+xor ra t2 t0
+sll ra ra t1
+Label1: srl ra ra t1
+slt ra ra t1
+mul ra ra t1
+addi ra ra 1
+bgeu ra t1 Label1
+slt ra ra t1
+mul ra ra t1
+addi ra ra 1
