@@ -15,8 +15,8 @@ sll ra ra t1
 Label1: srl ra ra t1
 slt ra ra t1
 mul ra ra t1
-addi ra ra 1
-bgeu ra t1 Label1
+addi ra ra -23
+bltu ra t1 Label1
 slt ra ra t1
 mul ra ra t1
 addi ra ra 1
