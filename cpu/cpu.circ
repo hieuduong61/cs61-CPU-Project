@@ -97,6 +97,11 @@
     <a name="circuit" val="cpu"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(100,890)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PCUpdate"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="0" loc="(1000,890)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="clk"/>
@@ -196,15 +201,6 @@
     <comp lib="0" loc="(1280,1130)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="BSel"/>
-    </comp>
-    <comp lib="0" loc="(130,890)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="PCUpdate"/>
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(130,930)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="PCSel"/>
     </comp>
     <comp lib="0" loc="(1310,1280)" name="Tunnel">
       <a name="facing" val="south"/>
@@ -335,6 +331,10 @@
     <comp lib="0" loc="(170,690)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="clk"/>
+    </comp>
+    <comp lib="0" loc="(170,960)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="PCSel"/>
     </comp>
     <comp lib="0" loc="(1830,270)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -631,7 +631,7 @@
     <comp lib="3" loc="(120,820)" name="Adder">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="3" loc="(290,740)" name="Adder">
+    <comp lib="3" loc="(280,740)" name="Adder">
       <a name="width" val="32"/>
     </comp>
     <comp lib="4" loc="(1390,730)" name="Register">
@@ -691,6 +691,7 @@
     <comp lib="7" loc="(1230,1110)" name="imm_gen"/>
     <comp lib="8" loc="(1160,1280)" name="control_logic"/>
     <comp lib="9" loc="(1660,1100)" name="branch_comp"/>
+    <wire from="(100,890)" to="(160,890)"/>
     <wire from="(1000,890)" to="(1010,890)"/>
     <wire from="(1010,1130)" to="(1010,1210)"/>
     <wire from="(1010,1210)" to="(1260,1210)"/>
@@ -728,10 +729,6 @@
     <wire from="(1290,900)" to="(1310,900)"/>
     <wire from="(130,650)" to="(130,790)"/>
     <wire from="(130,650)" to="(170,650)"/>
-    <wire from="(130,790)" to="(370,790)"/>
-    <wire from="(130,890)" to="(160,890)"/>
-    <wire from="(130,920)" to="(130,930)"/>
-    <wire from="(130,920)" to="(170,920)"/>
     <wire from="(1300,1100)" to="(1330,1100)"/>
     <wire from="(1320,190)" to="(1320,220)"/>
     <wire from="(1330,1000)" to="(1330,1100)"/>
@@ -744,7 +741,9 @@
     <wire from="(1380,680)" to="(1380,720)"/>
     <wire from="(1380,680)" to="(1440,680)"/>
     <wire from="(1380,720)" to="(1470,720)"/>
-    <wire from="(140,820)" to="(140,870)"/>
+    <wire from="(140,820)" to="(140,830)"/>
+    <wire from="(140,830)" to="(140,870)"/>
+    <wire from="(140,830)" to="(300,830)"/>
     <wire from="(140,870)" to="(160,870)"/>
     <wire from="(1410,1080)" to="(1430,1080)"/>
     <wire from="(1410,1110)" to="(1430,1110)"/>
@@ -775,7 +774,7 @@
     <wire from="(1660,1120)" to="(1660,1130)"/>
     <wire from="(1660,1130)" to="(1670,1130)"/>
     <wire from="(1680,990)" to="(1680,1010)"/>
-    <wire from="(170,900)" to="(170,920)"/>
+    <wire from="(170,900)" to="(170,960)"/>
     <wire from="(1720,890)" to="(1760,890)"/>
     <wire from="(1760,1080)" to="(1880,1080)"/>
     <wire from="(1760,890)" to="(1760,1080)"/>
@@ -829,12 +828,10 @@
     <wire from="(2240,920)" to="(2240,940)"/>
     <wire from="(2260,900)" to="(2290,900)"/>
     <wire from="(230,650)" to="(230,730)"/>
-    <wire from="(230,730)" to="(250,730)"/>
-    <wire from="(290,650)" to="(290,740)"/>
-    <wire from="(290,650)" to="(300,650)"/>
+    <wire from="(230,730)" to="(240,730)"/>
+    <wire from="(300,650)" to="(300,830)"/>
     <wire from="(340,880)" to="(370,880)"/>
-    <wire from="(370,550)" to="(370,790)"/>
-    <wire from="(370,790)" to="(370,880)"/>
+    <wire from="(370,550)" to="(370,880)"/>
     <wire from="(370,880)" to="(400,880)"/>
     <wire from="(380,240)" to="(380,260)"/>
     <wire from="(380,260)" to="(590,260)"/>
