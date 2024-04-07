@@ -4,3 +4,5 @@ mul t0, t0, t1
 
 mulh t0 t0 t0
 mulhu t0 t0 t0
+
+add ra t0 t0 t1
