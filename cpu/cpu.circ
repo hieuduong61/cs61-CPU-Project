@@ -64,7 +64,7 @@
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2">
     <tool name="Multiplexer">
-      <a name="facing" val="north"/>
+      <a name="facing" val="west"/>
     </tool>
     <tool name="Demultiplexer">
       <a name="facing" val="north"/>
@@ -80,12 +80,12 @@
       <a name="font" val="SansSerif plain 12"/>
     </tool>
   </lib>
-  <lib desc="file#partial-load.circ" name="6"/>
-  <lib desc="file#alu.circ" name="7"/>
-  <lib desc="file#imm-gen.circ" name="8"/>
-  <lib desc="file#regfile.circ" name="9"/>
-  <lib desc="file#branch-comp.circ" name="10"/>
-  <lib desc="file#partial-store.circ" name="11"/>
+  <lib desc="file#branch-comp.circ" name="6"/>
+  <lib desc="file#partial-store.circ" name="7"/>
+  <lib desc="file#regfile.circ" name="8"/>
+  <lib desc="file#alu.circ" name="9"/>
+  <lib desc="file#imm-gen.circ" name="10"/>
+  <lib desc="file#partial-load.circ" name="11"/>
   <lib desc="file#control-logic.circ" name="12"/>
   <main name="cpu"/>
   <options>
@@ -522,6 +522,10 @@
       <a name="label" val="test2"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="0" loc="(630,930)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
+    </comp>
     <comp lib="0" loc="(640,1300)" name="Constant"/>
     <comp lib="0" loc="(640,1320)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -532,6 +536,7 @@
       <a name="label" val="Instruction"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="0" loc="(690,910)" name="Constant"/>
     <comp lib="0" loc="(770,890)" name="Splitter">
       <a name="appear" val="center"/>
       <a name="bit0" val="none"/>
@@ -619,8 +624,8 @@
       <a name="label" val="sp"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="10" loc="(1660,1100)" name="branch_comp"/>
-    <comp lib="11" loc="(2170,970)" name="partial_store"/>
+    <comp lib="10" loc="(1230,1110)" name="imm_gen"/>
+    <comp lib="11" loc="(2150,810)" name="partial_load"/>
     <comp lib="12" loc="(1160,1280)" name="control_logic"/>
     <comp lib="2" loc="(1300,1100)" name="Multiplexer">
       <a name="width" val="32"/>
@@ -655,6 +660,10 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="4" loc="(690,860)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="5" loc="(1165,65)" name="Text">
       <a name="font" val="SansSerif bold 22"/>
       <a name="text" val="Inputs/Outputs for testing. Do **NOT** move these."/>
@@ -679,10 +688,10 @@
     <comp lib="5" loc="(480,100)" name="Text">
       <a name="text" val="From IMEM"/>
     </comp>
-    <comp lib="6" loc="(2150,810)" name="partial_load"/>
-    <comp lib="7" loc="(1720,890)" name="alu"/>
-    <comp lib="8" loc="(1230,1110)" name="imm_gen"/>
-    <comp lib="9" loc="(1230,780)" name="regfile"/>
+    <comp lib="6" loc="(1660,1100)" name="branch_comp"/>
+    <comp lib="7" loc="(2170,970)" name="partial_store"/>
+    <comp lib="8" loc="(1230,780)" name="regfile"/>
+    <comp lib="9" loc="(1720,890)" name="alu"/>
     <wire from="(1000,890)" to="(1010,890)"/>
     <wire from="(1010,1130)" to="(1010,1210)"/>
     <wire from="(1010,1210)" to="(1260,1210)"/>
@@ -817,14 +826,17 @@
     <wire from="(590,220)" to="(590,260)"/>
     <wire from="(590,70)" to="(590,180)"/>
     <wire from="(610,1280)" to="(640,1280)"/>
-    <wire from="(660,890)" to="(710,890)"/>
+    <wire from="(630,930)" to="(690,930)"/>
+    <wire from="(660,890)" to="(690,890)"/>
+    <wire from="(690,890)" to="(700,890)"/>
     <wire from="(70,780)" to="(370,780)"/>
     <wire from="(70,780)" to="(70,810)"/>
     <wire from="(70,810)" to="(80,810)"/>
-    <wire from="(710,1110)" to="(960,1110)"/>
-    <wire from="(710,890)" to="(710,1110)"/>
-    <wire from="(710,890)" to="(770,890)"/>
+    <wire from="(750,890)" to="(760,890)"/>
+    <wire from="(760,1110)" to="(960,1110)"/>
     <wire from="(760,210)" to="(770,210)"/>
+    <wire from="(760,890)" to="(760,1110)"/>
+    <wire from="(760,890)" to="(770,890)"/>
     <wire from="(760,90)" to="(1560,90)"/>
     <wire from="(760,90)" to="(760,210)"/>
     <wire from="(790,130)" to="(790,220)"/>
