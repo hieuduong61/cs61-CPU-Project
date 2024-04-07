@@ -536,11 +536,11 @@
       <a name="label" val="Instruction"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(710,910)" name="Constant"/>
-    <comp lib="0" loc="(710,930)" name="Tunnel">
+    <comp lib="0" loc="(700,930)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="clk"/>
     </comp>
+    <comp lib="0" loc="(710,910)" name="Constant"/>
     <comp lib="0" loc="(770,890)" name="Splitter">
       <a name="appear" val="center"/>
       <a name="bit0" val="none"/>
@@ -745,13 +745,11 @@
     <wire from="(1330,950)" to="(1640,950)"/>
     <wire from="(1340,210)" to="(1390,210)"/>
     <wire from="(1340,760)" to="(1340,830)"/>
-    <wire from="(1340,760)" to="(1370,760)"/>
+    <wire from="(1340,760)" to="(1390,760)"/>
     <wire from="(1340,830)" to="(1460,830)"/>
-    <wire from="(1370,720)" to="(1370,760)"/>
-    <wire from="(1370,720)" to="(1380,720)"/>
-    <wire from="(1370,760)" to="(1390,760)"/>
     <wire from="(1380,680)" to="(1380,720)"/>
     <wire from="(1380,680)" to="(1440,680)"/>
+    <wire from="(1380,720)" to="(1470,720)"/>
     <wire from="(140,820)" to="(140,830)"/>
     <wire from="(140,830)" to="(140,870)"/>
     <wire from="(140,830)" to="(260,830)"/>
@@ -767,9 +765,11 @@
     <wire from="(1430,210)" to="(1480,210)"/>
     <wire from="(1440,650)" to="(1440,680)"/>
     <wire from="(1440,650)" to="(1460,650)"/>
+    <wire from="(1450,760)" to="(1470,760)"/>
     <wire from="(1450,860)" to="(1460,860)"/>
     <wire from="(1460,830)" to="(1460,860)"/>
     <wire from="(1470,660)" to="(1470,670)"/>
+    <wire from="(1470,720)" to="(1470,760)"/>
     <wire from="(1490,640)" to="(1500,640)"/>
     <wire from="(1500,190)" to="(1500,220)"/>
     <wire from="(1500,640)" to="(1500,830)"/>
@@ -854,6 +854,7 @@
     <wire from="(70,550)" to="(370,550)"/>
     <wire from="(70,550)" to="(70,810)"/>
     <wire from="(70,810)" to="(80,810)"/>
+    <wire from="(700,930)" to="(710,930)"/>
     <wire from="(760,210)" to="(770,210)"/>
     <wire from="(760,90)" to="(1560,90)"/>
     <wire from="(760,90)" to="(760,210)"/>

@@ -1,8 +1,7 @@
-addi t0, x0, 89
-addi t1, x0, 17
-mul t0, t0, t1
+addi s0, x0, 200
+lui  s1, 86627   # 0x15263748
+addi s1, s1, 1864
 
-mulh t0 t0 t0
-mulhu t0 t0 t0
-
-add ra t0 t0 t1
+add t0 s0 s1
+mul t0 s0 s1
+sub t0 s0 s1
